@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pa">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amar Egg Shop - Moga</title>
+<style>
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    padding:0;
+    background:#fff8f0;
+    color:#333;
+}
+header{
+    background:#e65100;
+    color:white;
+    padding:15px;
+    text-align:center;
+}
+header h1{
+    margin:0;
+}
+.lang-button{
+    margin-top:5px;
+}
+.lang-button button{
+    margin:0 5px;
+    padding:5px 10px;
+    border:none;
+    border-radius:5px;
+    background:#fff;
+    color:#e65100;
+    font-weight:bold;
+    cursor:pointer;
+}
+section{
+    padding:10px 15px;
+}
+.menu-category{
+    margin-top:20px;
+}
+.menu-category h3{
+    color:#e65100;
+    margin-bottom:10px;
+}
+.menu-item{
+    display:flex;
+    align-items:center;
+    background:white;
+    padding:10px;
+    margin:10px 0;
+    border-radius:10px;
+    box-shadow:0 0 5px rgba(0,0,0,0.1);
+}
+.menu-item img{
+    width:80px;
+    height:80px;
+    border-radius:8px;
+    object-fit:cover;
+    margin-right:15px;
+}
+.menu-item p{
+    margin:0;
+    font-weight:bold;
+}
+
+/* Map */
+.map-container{
+    margin-top:20px;
+    text-align:center;
+}
+.map-container iframe{
+    width:100%;
+    height:250px;
+    border:0;
+    border-radius:10px;
+}
+
+/* Footer */
+footer{
+    background:#e65100;
+    color:white;
+    text-align:center;
+    padding:10px;
+    margin-top:20px;
+}
+.hide{
+    display:none;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1 class="lang pa">ਅਮਰ ਐਗ ਸ਼ਾਪ - ਮੋਗਾ</h1>
+    <h1 class="lang hi hide">अमर एग शॉप - मोगा</h1>
+    <h1 class="lang en hide">Amar Egg Shop - Moga</h1>
+    <div class="lang-button">
+        <button onclick="switchLang('pa')">ਪੰਜਾਬੀ</button>
+        <button onclick="switchLang('hi')">हिंदी</button>
+        <button onclick="switchLang('en')">English</button>
+    </div>
+</header>
+
+<section id="menu">
+<h2 class="lang pa">ਸਾਡਾ ਮੇਨੂ</h2>
+<h2 class="lang hi hide">हमारा मेनू</h2>
+<h2 class="lang en hide">Our Menu</h2>
+
+<!-- ===== EGG BURGER ===== -->
+<div class="menu-category">
+<h3 class="lang pa">🍔 ਐਗ ਬਰਗਰ</h3>
+<h3 class="lang hi hide">🍔 एग बर्गर</h3>
+<h3 class="lang en hide">🍔 Egg Burgers</h3>
+
+<div class="menu-item">
+<img src="https://via.placeholder.com/80" alt="Single Egg Burger">
+<p class="lang pa">ਸਿੰਗਲ ਐਗ ਬਰਗਰ – ₹30</p>
+<p class="lang hi hide">सिंगल एग बर्गर – ₹30</p>
+<p class="lang en hide">Single Egg Burger – ₹30</p>
+</div>
+
+<div class="menu-item">
+<img src="https://via.placeholder.com/80" alt="Double Egg Burger">
+<p class="lang pa">ਡਬਲ ਐਗ ਬਰਗਰ – ₹40</p>
+<p class="lang hi hide">डबल एग बर्गर – ₹40</p>
+<p class="lang en hide">Double Egg Burger – ₹40</p>
+</div>
+
+<div class="menu-item">
+<img src="https://via.placeholder.com/80" alt="Butter Egg Burger">
+<p class="lang pa">ਬਟਰ ਐਗ ਬਰਗਰ – ₹50</p>
+<p class="lang hi hide">बटर एग बर्गर – ₹50</p>
+<p class="lang en hide">Butter Egg Burger – ₹50</p>
+</div>
+</div>
+
+<!-- ===== EGG SANDWICH ===== -->
+<div class="menu-category">
+<h3 class="lang pa">🥪 ਐਗ ਸੈਂਡਵਿਚ</h3>
+<h3 class="lang hi hide">🥪 एग सैंडविच</h3>
+<h3 class="lang en hide">🥪 Egg Sandwich</h3>
+
+<div class="menu-item">
+<img src="https://via.placeholder.com/80" alt="Single Egg Sandwich">
+<p class="lang pa">ਸਿੰਗਲ ਐਗ ਸੈਂਡਵਿਚ – ₹30</p>
+<p class="lang hi hide">सिंगल एग सैंडविच – ₹30</p>
+<p class="lang en hide">Single Egg Sandwich – ₹30</p>
+</div>
+
+<div class="menu-item">
+<img src="https://via.placeholder.com/80" alt="Double Egg Sandwich">
+<p class="lang pa">ਡਬਲ ਐਗ ਸੈਂਡਵਿਚ – ₹40</p>
+<p class="lang hi hide">डबल एग सैंडविच – ₹40</p>
+<p class="lang en hide">Double Egg Sandwich – ₹40</p>
+</div>
+
+<div class="menu-item">
+<img src="https://via.placeholder.com/80" alt="Butter Egg Sandwich">
+<p class="lang pa">ਬਟਰ ਐਗ ਸੈਂਡਵਿਚ – ₹40</p>
+<p class="lang hi hide">बटर एग सैंडविच – ₹40</p>
+<p class="lang en hide">Butter Egg Sandwich – ₹40</p>
+</div>
+</div>
+
+<!-- ===== EGG ITEMS ===== -->
+<div class="menu-category">
+<h3 class="lang pa">🍳 ਐਗ ਆਈਟਮ</h3>
+<h3 class="lang hi hide">🍳 एग आइटम</h3>
+<h3 class="lang en hide">🍳 Egg Items</h3>
+
+<div class="menu-item">
+<img src="https://via.placeholder.com/80" alt="One Egg Bhurji">
+<p class="lang pa">ਇੱਕ ਐਗ ਭੁਰਜੀ – ₹20</p>
+<p class="lang hi hide">एक एग भुर्जी – ₹20</p>
+<p class="lang en hide">One Egg Bhurji – ₹20</p>
+</div>
+
+<div class="menu-item">
+<img src="https://via.placeholder.com/80" alt="Two Egg Bhurji">
+<p class="lang pa">ਦੋ ਐਗ ਭੁਰਜੀ – ₹40</p>
+<p class="lang hi hide">दो एग भुर्जी – ₹40</p>
+<p class="lang en hide">Two Egg Bhurji – ₹40</p>
+</div>
+
+<div class="menu-item">
+<img src="https://via.placeholder.com/80" alt="One Egg Omelette">
+<p class="lang pa">ਇੱਕ ਐਗ ਆਮਲੈੱਟ – ₹20</p>
+<p class="lang hi hide">एक एग ऑमलेट – ₹20</p>
+<p class="lang en hide">One Egg Omelette – ₹20</p>
+</div>
+
+<div class="menu-item">
+<img src="https://via.placeholder.com/80" alt="Two Egg Omelette">
+<p class="lang pa">ਦੋ ਐਗ ਆਮਲੈੱਟ – ₹40</p>
+<p class="lang hi hide">दो एग ऑमलेट – ₹40</p>
+<p class="lang en hide">Two Egg Omelette – ₹40</p>
+</div>
+
+<div class="menu-item">
+<img src="https://via.placeholder.com/80" alt="Half Fry One Egg">
+<p class="lang pa">ਹਾਫ ਫਰਾਈ (1 ਐਗ) – ₹20</p>
+<p class="lang hi hide">हाफ फ्राई (1 एग) – ₹20</p>
+<p class="lang en hide">Half Fry (1 Egg) – ₹20</p>
+</div>
+
+<div class="menu-item">
+<img src="https://via.placeholder.com/80" alt="Half Fry Two Egg">
+<p class="lang pa">ਹਾਫ ਫਰਾਈ (2 ਐਗ) – ₹40</p>
+<p class="lang hi hide">हाफ फ्राई (2 एग) – ₹40</p>
+<p class="lang en hide">Half Fry (2 Eggs) – ₹40</p>
+</div>
+
+<div class="menu-item">
+<img src="https://via.placeholder.com/80" alt="Boiled Egg">
+<p class="lang pa">ਉਬਲਾ ਐਗ (1 ਪੀਸ) – ₹15</p>
+<p class="lang hi hide">उबला अंडा (1 पीस) – ₹15</p>
+<p class="lang en hide">Boiled Egg (1 Piece) – ₹15</p>
+</div>
+</div>
+
+<!-- ===== TARI EGG ===== -->
+<div class="menu-category">
+<h3 class="lang pa">🍛 ਤਾਰੀ ਐਗ</h3>
+<h3 class="lang hi hide">🍛 तारी एग</h3>
+<h3 class="lang en hide">🍛 Tari Egg</h3>
+
+<div class="menu-item">
+<img src="https://via.placeholder.com/80" alt="Tari Egg One">
+<p class="lang pa">ਤਾਰੀ ਐਗ (1 ਐਗ) – ₹20</p>
+<p class="lang hi hide">तारी एग (1 एग) – ₹20</p>
+<p class="lang en hide">Tari Egg (1 Egg) – ₹20</p>
+</div>
+
+<div class="menu-item">
+<img src="https://via.placeholder.com/80" alt="Tari Egg Two">
+<p class="lang pa">ਤਾਰੀ ਐਗ (2 ਐਗ) – ₹40</p>
+<p class="lang hi hide">तारी एग (2 एग) – ₹40</p>
+<p class="lang en hide">Tari Egg (2 Eggs) – ₹40</p>
+</div>
+</div>
+
+<!-- ===== EGG ROLLS ===== -->
+<div class="menu-category">
+<h3 class="lang pa">🌯 ਐਗ ਰੋਲ</h3>
+<h3 class="lang hi hide">🌯 एग रोल</h3>
+<h3 class="lang en hide">🌯 Egg Rolls</h3>
+
+<div class="menu-item">
+<img src="https://via.placeholder.com/80" alt="Single Egg Roll">
+<p class="lang pa">ਸਿੰਗਲ ਐਗ ਰੋਲ – ₹30</p>
+<p class="lang hi hide">सिंगल एग रोल – ₹30</p>
+<p class="lang en hide">Single Egg Roll – ₹30</p>
+</div>
+
+<div class="menu-item">
+<img src="https://via.placeholder.com/80" alt="Double Egg Roll">
+<p class="lang pa">ਡਬਲ ਐਗ ਰੋਲ – ₹40</p>
+<p class="lang hi hide">डबल एग रोल – ₹40</p>
+<p class="lang en hide">Double Egg Roll – ₹40</p>
+</div>
+</div>
+
+<!-- ===== CHICKEN ===== -->
+<div class="menu-category">
+<h3 class="lang pa">🍗 ਚਿਕਨ ਆਈਟਮ</h3>
+<h3 class="lang hi hide">🍗 चिकन आइटम</h3>
+<h3 class="lang en hide">🍗 Chicken Items</h3>
+
+<div class="menu-item">
+<img src="https://via.placeholder.com/80" alt="Tari Chicken 1 Piece">
+<p class="lang pa">ਤਾਰੀ ਚਿਕਨ (1 ਪੀਸ) – ₹30</p>
+<p class="lang hi hide">तारी चिकन (1 पीस) – ₹30</p>
+<p class="lang en hide">Tari Chicken (1 Piece) – ₹30</p>
+</div>
+
+<div class="menu-item">
+<img src="https://via.placeholder.com/80" alt="Tari Chicken 2 Pieces">
+<p class="lang pa">ਤਾਰੀ ਚਿਕਨ (2 ਪੀਸ) – ₹50</p>
+<p class="lang hi hide">तारी चिकन (2 पीस) – ₹50</p>
+<p class="lang en hide">Tari Chicken (2 Pieces) – ₹50</p>
+</div>
+
+<div class="menu-item">
+<img src="https://via.placeholder.com/80" alt="Chicken Roll Single">
+<p class="lang pa">ਚਿਕਨ ਰੋਲ (ਸਿੰਗਲ) – ₹50</p>
+<p class="lang hi hide">चिकन रोल (सिंगल) – ₹50</p>
+<p class="lang en hide">Chicken Roll (Single) – ₹50</p>
+</div>
+
+<div class="menu-item">
+<img src="https://via.placeholder.com/80" alt="Chicken Roll Double">
+<p class="lang pa">ਚਿਕਨ ਰੋਲ (ਡਬਲ) – ₹80</p>
+<p class="lang hi hide">चिकन रोल (डबल) – ₹80</p>
+<p class="lang en hide">Chicken Roll (Double) – ₹80</p>
+</div>
+</div>
+
+<!-- ===== GOOGLE MAP ===== -->
+<div class="map-container">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3406.1234567890!2d75.1610!3d30.8160!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391015d9a1234567%3A0xabcdef1234567890!2sGT%20Road%20Chungi%2C%20Moga!5e0!3m2!1sen!2sin!4v1234567890" allowfullscreen="" loading="lazy"></iframe>
+</div>
+
+<footer>
+<p class="lang pa">© 2025 ਅਮਰ ਐਗ ਸ਼ਾਪ - ਮੋਗਾ</p>
+<p class="lang hi hide">© 2025 अमर एग शॉप - मोगा</p>
+<p class="lang en hide">© 2025 Amar Egg Shop - Moga</p>
+</footer>
+
+<script>
+function switchLang(lang){
+    document.querySelectorAll('.lang').forEach(el=>{
+        el.classList.add('hide');
+    });
+    document.querySelectorAll('.'+lang).forEach(el=>{
+        el.classList.remove('hide');
+    });
+}
+</script>
+
+</body>
+</html>
